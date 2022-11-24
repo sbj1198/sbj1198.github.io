@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SBJ</title>
+    <meta
+      name="description"
+      content="A Front End Web Developer passionate about creating interactive applications and experiences on the web."
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+
+  <body>
+    <!-- Mobile menu button -->
+    <div id="home" class="visuallyHidden"></div>
+    <div class="menuButton" id="menuButton" tabindex="0">
+      <div class="linesContainer">
+        <span></span>
+      </div>
+    </div>
+    <!-- Side menu -->
+    <aside class="sideMenu sideMenuShow" id="sideMenu">
+      <p class="logo">SBJ</p>
+
+      <nav>
+        <ul class="navBar">
+          <li class="homeNav">
+            <a href="#home" class="navItem">
+              <i class="lni lni-home"></i>
+              <span class="navItemName">HOME</span>
+            </a>
+          </li>
+          <li class="aboutNav">
+            <a href="#about" class="navItem">
+              <i class="lni lni-user"></i>
+              <span class="navItemName">ABOUT</span>
+            </a>
+          </li>
+          <li class="skillsNav">
+            <a href="#skills" class="navItem">
+              <i class="lni lni-code-alt"></i>
+              <span class="navItemName">SKILLS</span>
+            </a>
+          </li>
+          <li class="worksNav">
+            <a href="#works" class="navItem">
+              <i class="lni lni-briefcase"></i>
+              <span class="navItemName">PROJECTS</span>
+            </a>
+          </li>
+          <li class="contactNav">
+            <a href="#contact" class="navItem">
+              <i class="lni lni-phone"></i>
+              <span class="navItemName">CONTACT</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="scrollDown" id="scrollDown">
+        <i class="lni lni-arrow-down"></i>
+        <span class="navItemName scrollDownText">Scroll Down</span>
+      </div>
+    </aside>
+
+    <!--Beginning of the wrapper -->
+    <div class="outerWrapper">
+      <div class="innerWrapper">
+        <!-- Header -->
+        <header>
+          <div class="heroImageContainer">
+            <img
+              src="assets/images/me.jpg"
+              alt="A picture of Setu Bhaskar Jha."
+            />
+          </div>
+          <div class="heroDescription">
+            <p class="greeting">HI THERE! I'M</p>
+            <h1><span>SETU BHASKAR</span> JHA</h1>
+            <p class="smallBio"
+              >I am a <span>Full Stack Web Developer</span> with a vast array of
+              knowledge in many different front-end and back-end languages,
+              frameworks, databases, and best code practices.</p
+            >
+            <div class="socialsResume">
+              <a
+                class="resumeLink"
+                href="assets/Setu-Bhaskar-Jha-Resume.pdf"
+                alt="Setu Bhaskar Jha's resumé"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Resumé</a
+              >
+              <ul class="socialsList">
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/setubhaskarjha/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i
+                      class="lni lni-linkedin-original"
+                      aria-label="Link to Setu's LinkedIn page."
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/sbj1198"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><i
+                      class="lni lni-github-original"
+                      aria-label="Link to Setu's GitHub page."
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </header>
+        <!-- Beginning of Main -->
+        <main>
+          <!-- About Section -->
+          <section class="aboutSection" id="about">
+            <div class="sectionHead">
+              <span>SOME INFO</span>
+              <h2>ABOUT ME</h2>
+            </div>
+
+            <article class="aboutContainer sectionContainer">
+              <p
+                >My name is Setu Bhaskar Jha. I'm a Computer Science engineer
+                and a full stack web developer with a specialization in
+                <span>MERN Stack</span>. Looking forward to joining a
+                progressive and challenging work environment. I am dedicated to
+                perfecting my craft by learning from more seasoned developers,
+                remaining humble, and continuously making strides to learn all
+                that I can about development.</p
+              >
+            </article>
+          </section>
+
+          <!-- Skills Section -->
+          <section class="skillsSection" id="skills">
+            <div class="sectionHead">
+              <span>CHECK OUT MY</span>
+              <h2>SKILLS</h2>
+            </div>
+
+            <div class="skillsContainer sectionContainer">
+              <ul class="skillsGrid">
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/skills/html-5.svg" />
+                    <p>HTML</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/skills/css3.svg" />
+                    <p>CSS</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/skills/javascript.svg" />
+                    <p>Javascript</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/skills/c.svg" />
+                    <p>C</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/skills/cplusplus.svg" />
+                    <p>C++</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/skills/react.svg" />
+                    <p>React</p>
+                  </div>
+                </li>
+                <!-- <li>
+                <div class="itemContainer">
+                  <img src="assets/skills/api.svg" alt="Image from https://commons.wikimedia.org/wiki/File:Cloud-API-Logo.svg">
+                  <p>REST API</p>
+                </div>
+              </li> -->
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/skills/git.svg" />
+                    <p>Git</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/skills/firebase.svg" />
+                    <p>Firebase</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/skills/redux.svg" />
+                    <p>Redux</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/skills/typescript.svg" />
+                    <p>Typescript</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/skills/nodejs.svg" />
+                    <p>Node</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/skills/express.svg" />
+                    <p>Express</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="itemContainer">
+                    <img src="assets/skills/mongodb.svg" />
+                    <p>MongoDB</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Works Section -->
+          <section class="worksSection" id="works">
+            <div class="sectionHead">
+              <span>TAKE A LOOK AT MY</span>
+              <h2>PROJECTS</h2>
+            </div>
+
+            <div class="worksContainer sectionContainer">
+              <article class="workBox">
+                <div class="workImageContainer">
+                  <img src="assets/images/bigbasket.jfif" alt="bigbasket" />
+                </div>
+                <div class="workDescribeContainer">
+                  <h3>Bigbasket Clone</h3>
+                  <h4>
+                    Technologies Used: <span class="techStack">React</span>,
+                    <span class="techStack">HTML</span>,
+                    <span class="techStack">CSS</span>
+                    <span class="techStack">Javascript</span>
+                    <span class="techStack">Node.js</span>
+                    <span class="techStack">Express</span>
+                    <span class="techStack">MongoDB</span>
+                  </h4>
+                  <ul>
+                    <li>A web application to buy groceries online</li>
+                    <li
+                      >Google Authentication service allows an extra layer of
+                      security and hassle free sign up</li
+                    >
+                    <li
+                      >Data handling using API built with Node.js and Express.js
+                      with MongoDB as the database</li
+                    >
+                  </ul>
+                  <div class="workLinks">
+                    <a
+                      href="https://bigbasket-clone-v2.vercel.app/"
+                      class="liveLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Live</a
+                    >
+                    <a
+                      href="https://github.com/Iqbal0786/Bigbasket_Clone_v2"
+                      class="repoLink"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Repo</a
+                    >
+                  </div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Github Calendar -->
+          <section class="skillsSection" id="skills">
+            <div class="sectionHead">
+              <span>CHECK OUT MY</span>
+              <h2>GITHUB CALENDAR</h2>
+            </div>
+            <div class="skillsContainer sectionContainer">
+              <!-- Prepare a container for your calendar. -->
+              <div class="calendar">
+                <!-- Loading stuff -->
+                Loading the data just for you.
+              </div>
+            </div>
+          </section>
+
+          <section class="skillsSection" id="skills">
+            <div class="sectionHead">
+              <span>CHECK OUT MY</span>
+              <h2>GITHUB CONTRIBUTIONS</h2>
+            </div>
+            <div class="skillsContainer sectionContainer sbjSkillsContainer">
+              <a href="https://github.com/sbj1198/github-readme-stats">
+                <img
+                  align="center"
+                  src="https://github-readme-streak-stats.herokuapp.com?user=sbj1198&theme=dark"
+                />
+              </a>
+              <a href="https://github.com/sbj1198/github-readme-stats">
+                <img
+                  align="center"
+                  src="https://github-readme-stats.vercel.app/api?username=sbj1198&show_icons=true&theme=radical&count_private=true"
+                />
+              </a>
+            </div>
+          </section>
+
+          <!-- Contact Section -->
+          <section class="contactSection" id="contact">
+            <div class="sectionHead">
+              <span>SAY HELLO</span>
+              <h2>CONTACT</h2>
+            </div>
+
+            <div class="contactContainer sectionContainer">
+              <h3>Get in Touch</h3>
+              <div class="contactTypes">
+                <div class="flexContainer">
+                  <div class="typeBox">
+                    <i class="lni lni-envelope"></i>
+                    <a href="mailto:sbhaskar1998@gmail.com"
+                      >sbhaskar1998@gmail.com</a
+                    >
+                    <p>Email Me</p>
+                  </div>
+                </div>
+              </div>
+              <div class="contactFormContainer">
+                <h3>Contact Form</h3>
+
+                <form
+                  id="contactForm"
+                  action="https://formspree.io/f/xyyvaeae"
+                  method="POST"
+                >
+                  <label for="nameInput" class="srOnly"></label>
+                  <input
+                    type="text"
+                    id="nameInput"
+                    name="nameInput"
+                    class="nameInput"
+                    required
+                    placeholder="Your Name*"
+                  />
+                  <label for="emailInput" class="srOnly"></label>
+                  <input
+                    type="email"
+                    id="emailInput"
+                    name="emailInput"
+                    class="emailInput"
+                    required
+                    placeholder="Your Email*"
+                  />
+                  <label for="subjectInput" class="srOnly"></label>
+                  <input
+                    type="text"
+                    id="subjectInput"
+                    name="subjectInput"
+                    class="subjectInput"
+                    required
+                    placeholder="Subject*"
+                  />
+                  <label for="messageInput" class="srOnly"></label>
+                  <textarea
+                    class="messageInput"
+                    name="messageInput"
+                    id="messageInput"
+                    required
+                    placeholder="Your Message*"
+                  ></textarea>
+                </form>
+
+                <button
+                  type="submit"
+                  class="formSend"
+                  target="_blank"
+                  form="contactForm"
+                  rel="noopener noreferrer"
+                  >SEND</button
+                >
+              </div>
+            </div>
+          </section>
+        </main>
+        <!-- End of Main -->
+      </div>
+      <!-- Footer -->
+      <footer> <p>&copy; SBJ 2022 </p></footer>
+
+      <!-- Icons provided by https://lineicons.com/ -->
+    </div>
+    <!-- End of the wrapper -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+  </body>
+  <script>
+    // or enable responsive functionality
+    GitHubCalendar(".calendar", "sbj1198", {
+      responsive: true,
+      tooltips: true,
+    });
+  </script>
+</html>
