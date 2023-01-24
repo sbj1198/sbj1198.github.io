@@ -76,3 +76,9 @@ index.init = function () {
 $(function () {
   index.init();
 });
+
+document.getElementById("myres").addEventListener("click", () => {
+  window.open(
+    "https://drive.google.com/file/d/1_g0fWDydZb-BhRE5kZOQjeAHrF1ThFff/view?usp=share_link"
+  );
+});
